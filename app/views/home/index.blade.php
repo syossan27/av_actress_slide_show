@@ -1,12 +1,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<!-- jQuery library (served from Google) -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<!-- bxSlider Javascript file -->
 		<script src="/js/jquery.bxslider.min.js"></script>
-		<!-- bxSlider CSS file -->
 		<link href="/css/jquery.bxslider.css" rel="stylesheet" />
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.bxslider').bxSlider();
+			});
+		</script>
 	</head>
 	<body>
 		<ul class="bxslider">

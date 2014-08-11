@@ -6,9 +6,10 @@ class HomeController extends BaseController {
 	{
 
 		// Twitter検索結果取得
-		$search_result = Twitter::getSearch(['q' => '#AV女優自画撮り部',
+		//$search_result = Twitter::getSearch(['q' => '#AV女優自画撮り部',
+		$search_result = Twitter::getSearch(['q' => 'ペット',
 											'result_type' => 'recent', 
-											'count' => '100', 
+											'count' => '10', 
 											'include_entities' => 'true']);
 
 		$urls = [];
