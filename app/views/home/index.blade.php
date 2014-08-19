@@ -6,14 +6,25 @@
 		<link href="/css/jquery.bxslider.css" rel="stylesheet" />
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$('.bxslider').bxSlider();
+				$('.bxslider').bxSlider({
+					auto: true,
+					pause: 6000,
+					autoControls: false,
+					adaptiveHeight: false,
+					mode: 'fade',
+					nextSelector: '#slider-next',
+					prevSelector: '#slider-prev',
+					infiniteLoop: true,
+					pager: false
+				});
 			});
 		</script>
+		{{ HTML::style('css/index.css') }}
 	</head>
 	<body>
 		<ul class="bxslider">
 		@foreach ($img_urls as $img_url)	
-		  <li><img src={{$img_url}} /></li>
+			<li><img src={{$img_url}} /></li>
 		@endforeach
 		</ul>
 	</body>
